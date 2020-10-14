@@ -43,10 +43,16 @@ function spin() {
   box.classList.toggle('spin');
 }
 
+function changeIcon() {
+  let iconCode = (fireBtn.innerText.codePointAt(0) === 128293) ? 128166 : 128293;
+  fireBtn.innerText = String.fromCodePoint(iconCode);
+}
+
 box.addEventListener('click', changeColor);
 box.addEventListener('drag', logMessage);
 box.addEventListener('mouseover', spin);
 fireBtn.addEventListener('click', showImage);
+fireBtn.addEventListener('click', changeIcon);
 monkeyBtn.addEventListener('click', changeBgColor);
 textInput.addEventListener('keyup', grow);
 textInput.addEventListener('keydown', shrink);
