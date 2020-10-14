@@ -39,8 +39,13 @@ function shrink() {
   box.style.height = `${height}px`;
 }
 
+function spin() {
+  box.classList.toggle('spin');
+}
+
 box.addEventListener('click', changeColor);
 box.addEventListener('drag', logMessage);
+box.addEventListener('mouseover', spin);
 fireBtn.addEventListener('click', showImage);
 monkeyBtn.addEventListener('click', changeBgColor);
 textInput.addEventListener('keyup', grow);
