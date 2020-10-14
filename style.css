@@ -1,0 +1,23 @@
+div {
+  height: 250px;
+  width: 250px;
+  background: cornflowerblue;
+  transition-duration: .6s;
+  margin: 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+.green {
+	background: #9fe2bf;
+}
+
+.red {
+	background: red;
+}
+
+.spin {
+	transform: rotate(360deg) translate(100px) scale(.2);
+}
