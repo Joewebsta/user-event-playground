@@ -18,6 +18,10 @@ div {
 	background: red;
 }
 
+.gray {
+  background-color: gray;
+}
+
 .spin {
 	transform: rotate(360deg) translate(100px) scale(.2);
 }
