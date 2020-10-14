@@ -17,6 +17,10 @@ function showImage() {
   boxImg.classList.toggle('hidden');
 }
 
+function logMessage() {
+  console.log('Put me down!');
+}
+
 function grow() {
   let width = box.offsetWidth;
   let height = box.offsetHeight;
@@ -36,6 +40,7 @@ function shrink() {
 }
 
 box.addEventListener('click', changeColor);
+box.addEventListener('drag', logMessage);
 fireBtn.addEventListener('click', showImage);
 monkeyBtn.addEventListener('click', changeBgColor);
 textInput.addEventListener('keyup', grow);
